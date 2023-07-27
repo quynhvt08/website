@@ -74,45 +74,8 @@
 								<li class="active"><a href="?view">Trang Chủ</a></li>
 								<li class="has-dropdown">
 									<a href="#">Danh Mục</a>
-									<ul class="dropdown"><?php ;$category=categorys();
-										 while ($row=(mysqli_fetch_array($category)))  {
-											echo '	<li><a href="?view=products-category&id='.$row['MaNCC'].'">'.$row['TenNCC'].'</a></li>';
-										} ?>
-										
-									</ul>
-								</li>
-								<li><a href="?view=products">Sản Phẩm</a></li>
-								<li><a href="?view=about">Về Chúng Tôi</a></li>
-								<li><a href="?view=contact">Liên Hệ</a></li>
-								<?php $dem=0; if(isset($_SESSION['cart_product'])){ foreach ($_SESSION['cart_product'] as $item_cart){$dem=$dem+$item_cart['SoLuong'];}}?> 
-                    	
-								<li class="cart"><a href="?view=cart"><i class="fas fa-basket-shopping"></i> Giỏ Hàng [<?php echo $dem; ?>]</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="sale">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-8 offset-sm-2 text-center">
-							<div class="row">
-								<div class="owl-carousel2">
-									<div class="item">
-										<div class="col">
-											<h3><a href="#">Giảm giá 25% (Hầu hết) Mọi thứ! Sử dụng mã: Giảm giá mùa hè</a></h3>
-										</div>
-									</div>
-									<div class="item">
-										<div class="col">
-											<h3><a href="#">Giảm giá lớn nhất của chúng tôi. giảm 50% cho tất cả giày mùa hè</a></h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+									
 		</nav>
+
+
     
